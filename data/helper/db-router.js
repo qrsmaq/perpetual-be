@@ -5,7 +5,7 @@ const restricted = require("./auth/restricted-middleware.js");
 
 // READ
 // read all data
-router.get("/", restricted, (req, res) => {
+router.get("/", (req, res) => {
   // the 'table' variable returns the baseUrl from the request after removing the slash
   // this works because the table name matches the baseUrl
   const table = req.baseUrl.split("/").slice(1).join("");
