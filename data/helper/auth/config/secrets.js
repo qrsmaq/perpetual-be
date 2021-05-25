@@ -3,5 +3,5 @@ if (!process.env.JWT_SECRET) {
 }
 
 module.exports = {
-  jwtSecret: process.env.JWT_SECRET || "this is it",
+  jwtSecret: process.env.JWT_SECRET,
 };
